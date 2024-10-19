@@ -1,9 +1,0 @@
-build
-.build
-.idea
-.vscode
-cmake-build-debug
-cmake-build-release
-cpprestsdk
-grpc
-etcd-cpp-apiv3
