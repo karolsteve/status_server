@@ -1,0 +1,12 @@
+[submodule "etcdregistry"]
+	path = etcdregistry
+	url = https://github.com/karolsteve/etcdregistry.git
+	branch = master
+[submodule "fastlog"]
+	path = fastlog
+	url = https://github.com/karolsteve/fastlog.git
+	branch = master
+[submodule "bootstrap/tp/yaml-cpp"]
+	path = bootstrap/tp/yaml-cpp
+	url = https://github.com/jbeder/yaml-cpp.git
+	branch = master

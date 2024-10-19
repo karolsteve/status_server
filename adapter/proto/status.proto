@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "StatusRPCServerProto";
+
+message SetStatusOnlineReq {
+  int32 userID = 1;
+  int64 authKeyID = 2;
+  int32 serverID = 3;
+  int32 appVersion = 4;
+  int32 ttlSec = 5;
+}
+
+message SetStatusOfflineReq {
+  int32 userID = 1;
+  int64 authKeyID = 2;
+}
+
+message StatusReqUserID {
+  int32 userID = 1;
+}
+
+message UserOnlineSessions {
+  repeated string activeSession = 1;
+}
+
+message SetStatusVoidResp {
+
+}
+
+service StatusRPCServer{
+  rpc setSessionOnlineTTL(SetStatusOnlineReq) returns (SetStatusVoidResp);
+  rpc setSessionOffline(SetStatusOfflineReq) returns (SetStatusVoidResp);
+  rpc getUserOnlineSessions(StatusReqUserID) returns (UserOnlineSessions);
+}

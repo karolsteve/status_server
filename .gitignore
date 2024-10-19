@@ -1,0 +1,11 @@
+build
+.build
+.idea
+.vscode
+cmake-build-debug
+cmake-build-release
+.cmake-build
+.cmake-build-debug
+.cmake-build-release
+cpprestsdk
+etcd-cpp-apiv3
